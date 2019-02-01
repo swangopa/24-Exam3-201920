@@ -275,6 +275,16 @@ def problem4(seq_of_seq, n):
     # TODO: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+    seq = []
+    for k in range(len(seq_of_seq)):
+        for j in range(len(seq_of_seq[k])):
+            seq.append(seq_of_seq[k][j])
+            if type(seq_of_seq[k][j]) > int:
+                return [0]
+            else:
+                return -1
+
+
 
 
 ###############################################################################
